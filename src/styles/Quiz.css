@@ -1,0 +1,32 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-container {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: #0f3446;
+}
+.quiz-container h1 {
+  color: #f3f7fe;
+  margin: 1.5rem;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.quiz {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Quiz.css.map */

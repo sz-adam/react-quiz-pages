@@ -1,0 +1,16 @@
+%flex-colum-justCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+%flex-colum {
+    display: flex;
+    flex-direction: column;
+
+}
+
+%font-size-bold{
+    font-weight: bold;
+    font-size: 20px;
+}

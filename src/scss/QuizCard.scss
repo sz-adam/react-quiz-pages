@@ -1,0 +1,103 @@
+@use 'variables';
+@import '../scss/templates';
+@import '../scss/mixins';
+
+
+.quizcard-container {
+    display: flex;
+    justify-content: center;
+    @include wh($widht: 80%, $height: 60%);
+   
+    color: variables.$text-color_1;
+    text-align: center;
+    position: relative;
+
+    .quizcardshow {
+        @extend %flex-colum-justCenter;
+        align-items: center;
+        text-align: center;
+
+        p {
+            @extend %font-size-bold;
+            padding: 10px;
+        }
+
+        .showRestart {
+            margin: 1.5rem;
+            padding: 0.5rem 1.5rem;        
+            @extend %font-size-bold;
+            background-color: variables.$button-color;
+            color: variables.$color_input-button;
+            transition: .3s;
+            cursor: pointer;
+            border: none;
+
+            &:hover {
+                background-color: variables.$color_input-button;
+                box-shadow: 0 0 0 5px variables.$color_input-button;
+                color: variables.$text-color_1;
+            }
+        }
+    }
+
+    .quizcard {
+        @extend %flex-colum;
+        @include wh($widht: 100%);          	
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+
+        .quizquestion {
+            margin-bottom: 20px;
+
+            p {
+                @extend %font-size-bold;
+                padding: 10px;
+                letter-spacing: 4px;
+            }
+        }
+
+
+        .quizcard-answer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+           
+
+            p {
+                min-width: 250px;
+                padding: 15px;
+                letter-spacing: 3px;
+            }
+
+
+            .answers {
+                border: 1px solid rgb(133, 133, 133);
+                cursor: pointer;
+                border-radius: 20px;
+
+
+            }
+
+            .correct {
+                background-color: variables.$correct-color;
+                color: variables.$text-color_1;
+            }
+
+            .incorrect {
+                background-color: variables.$incorrect-color;
+                color: variables.$text-color_1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   
+ 
+    .quizcard-answer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)  !important
+    }
+  }

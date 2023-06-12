@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/_templates.scss","../scss/Quiz.scss","../scss/_mixins.scss","../scss/_variables.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAGJ;EACI;EACA;;;ACJJ;ECHI,ODKiB;ECJjB,QDIgC;EACnC;EACA,kBENoB;;AFQpB;EACC,OEXa;EFYb;EACA;EACA;EACA;;;AAGF;ECjBI,ODmBiB;EClBjB,QDkBgC;EACnC","file":"Quiz.css"}

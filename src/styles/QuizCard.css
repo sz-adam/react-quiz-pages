@@ -1,0 +1,92 @@
+.quizcard-container .quizcardshow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quizcard-container .quizcard {
+  display: flex;
+  flex-direction: column;
+}
+
+.quizcard-container .quizcard .quizquestion p, .quizcard-container .quizcardshow .showRestart, .quizcard-container .quizcardshow p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.quizcard-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 60%;
+  color: #f3f7fe;
+  text-align: center;
+  position: relative;
+}
+.quizcard-container .quizcardshow {
+  align-items: center;
+  text-align: center;
+}
+.quizcard-container .quizcardshow p {
+  padding: 10px;
+}
+.quizcard-container .quizcardshow .showRestart {
+  margin: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.quizcard-container .quizcardshow .showRestart:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b82f6;
+  color: #f3f7fe;
+}
+.quizcard-container .quizcard {
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.quizcard-container .quizcard .quizquestion {
+  margin-bottom: 20px;
+}
+.quizcard-container .quizcard .quizquestion p {
+  padding: 10px;
+  letter-spacing: 4px;
+}
+.quizcard-container .quizcard .quizcard-answer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.quizcard-container .quizcard .quizcard-answer p {
+  min-width: 250px;
+  padding: 15px;
+  letter-spacing: 3px;
+}
+.quizcard-container .quizcard .quizcard-answer .answers {
+  border: 1px solid rgb(133, 133, 133);
+  cursor: pointer;
+  border-radius: 20px;
+}
+.quizcard-container .quizcard .quizcard-answer .correct {
+  background-color: rgb(29, 136, 29);
+  color: #f3f7fe;
+}
+.quizcard-container .quizcard .quizcard-answer .incorrect {
+  background-color: rgb(212, 54, 54);
+  color: #f3f7fe;
+}
+
+@media only screen and (max-width: 768px) {
+  .quizcard-answer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+/*# sourceMappingURL=QuizCard.css.map */
